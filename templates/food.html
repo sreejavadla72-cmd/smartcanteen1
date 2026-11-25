@@ -1,0 +1,54 @@
+
+{% extends "base.html" %}
+
+{% block title %}Food Items | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Food Items 🍔</h1>
+
+<p class="page-description">
+    View and manage all available food items in the canteen.
+</p>
+
+<a href="{{ url_for('add_food') }}" class="primary-btn">
+    + Add New Food Item
+</a>
+
+<div style="margin-top:25px; overflow-x:auto;">
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Food Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Available Quantity</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.food_name }}</td>
+            <td>{{ item.category }}</td>
+            <td>₹{{ "%.2f"|format(item.price) }}</td>
+            <td>{{ item.quantity_available }}</td>
+            <td>{{ item.description or '-' }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="6" style="text-align:center;">
+                No food items available. Please add food items.
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+</div>
+
+{% endblock %}

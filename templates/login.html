@@ -1,0 +1,43 @@
+
+{% extends "base.html" %}
+
+{% block title %}Admin Login | Smart Canteen{% endblock %}
+
+{% block login_content %}
+
+<div class="login-card">
+    <div class="login-icon">🍽️</div>
+
+    <h1>Smart Canteen</h1>
+    <p>Demand Forecasting Using Machine Learning</p>
+
+    <h2>Admin Login</h2>
+
+    <form method="POST" action="{{ url_for('login') }}">
+
+        <label>Username</label>
+        <input
+            type="text"
+            name="username"
+            placeholder="Enter admin username"
+            required
+        >
+
+        <label>Password</label>
+        <input
+            type="password"
+            name="password"
+            placeholder="Enter password"
+            required
+        >
+
+        <button type="submit" class="primary-btn">
+            Login to Dashboard
+        </button>
+
+    </form>
+
+    <p class="login-footer">Smart Canteen Management System</p>
+</div>
+
+{% endblock %}

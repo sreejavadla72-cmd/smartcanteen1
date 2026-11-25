@@ -1,0 +1,234 @@
+
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Admin Dashboard 📊</h1>
+
+<p class="page-description">
+    Smart Canteen Management and Food Demand Forecasting System.
+</p>
+
+<!-- BASIC DASHBOARD STATISTICS -->
+
+<div class="card-container">
+
+    <div class="stat-card">
+        <h3>🍔 Total Food Items</h3>
+        <h2>{{ total_food }}</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>💰 Total Revenue</h3>
+        <h2>₹{{ "%.2f"|format(total_sales|float) }}</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>🧾 Total Sales Orders</h3>
+        <h2>{{ total_orders }}</h2>
+    </div>
+
+</div>
+
+<!-- LOW STOCK ALERTS -->
+
+<h2 style="margin-top:35px;">Low Stock Alerts ⚠️</h2>
+
+<div style="overflow-x:auto;">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Food Name</th>
+                <th>Category</th>
+                <th>Available Quantity</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for item in low_stock %}
+            <tr>
+                <td>{{ item.food_name }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.quantity_available }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="3" style="text-align:center;">
+                    No low-stock items.
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</div>
+
+<!-- RECENT SALES -->
+
+<h2 style="margin-top:35px;">Recent Sales Performance 📈</h2>
+
+<div class="form-card">
+    <p>
+        Sales records for the latest seven days are available.
+    </p>
+
+    <a href="{{ url_for('daily_sales') }}" class="primary-btn">
+        View Daily Sales
+    </a>
+</div>
+
+<!-- MACHINE LEARNING RESULTS -->
+
+<h2 style="margin-top:35px;">
+    🤖 Machine Learning Overview
+</h2>
+
+<div class="card-container">
+
+    <div class="stat-card">
+        <h3>🏆 Best ML Model</h3>
+        <h2>{{ best_model }}</h2>
+        <p>Selected using lowest MAE</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>🍽️ Forecast Food Items</h3>
+        <h2>{{ monthly_summary|length }}</h2>
+        <p>November 2026 predictions</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>📅 Prediction Period</h3>
+        <h2>November 2026</h2>
+        <p>Monthly food demand forecast</p>
+    </div>
+
+</div>
+
+<!-- MONTHLY FOOD DEMAND -->
+
+<div class="form-card" style="margin-top:30px;">
+
+    <h2>📊 November 2026 Food Demand Forecast</h2>
+
+    {% if prediction_summary %}
+
+    <div style="overflow-x:auto;">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Predicted Quantity</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for item in prediction_summary %}
+                <tr>
+                    <td>
+                        {{ item.get('Food_Item', 'Unknown') }}
+                    </td>
+
+                    <td>
+                        {{ item.get('Predicted_Quantity',
+                            item.get('Total_Predicted_Quantity',
+                            item.get('Monthly_Predicted_Quantity', '-'))) }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    {% else %}
+
+    <p>
+        No machine learning prediction data found.
+        Please check your CSV files.
+    </p>
+
+    {% endif %}
+
+    <a href="{{ url_for('predictions') }}"
+       class="primary-btn"
+       style="display:inline-block;margin-top:20px;">
+        View All Predictions
+    </a>
+
+</div>
+
+<!-- MODEL PERFORMANCE -->
+
+<div class="form-card" style="margin-top:30px;">
+
+    <h2>📈 Machine Learning Model Performance</h2>
+
+    {% if model_results %}
+
+    <div style="overflow-x:auto;">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Algorithm</th>
+                    <th>MAE</th>
+                    <th>RMSE</th>
+                    <th>R² Score</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for model in model_results %}
+                <tr>
+                    <td>{{ model.get('Model', '-') }}</td>
+                    <td>{{ model.get('MAE', '-') }}</td>
+                    <td>{{ model.get('RMSE', '-') }}</td>
+                    <td>{{ model.get('R2 Score', '-') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+    {% else %}
+
+    <p>No model evaluation results found.</p>
+
+    {% endif %}
+
+</div>
+
+<!-- PROJECT INFORMATION -->
+
+<div class="form-card" style="margin-top:30px;">
+
+    <h2>ℹ️ About Smart Canteen</h2>
+
+    <p>
+        Smart Canteen uses historical food sales data and
+        Machine Learning algorithms to forecast future food demand.
+    </p>
+
+    <p><strong>Algorithms used:</strong></p>
+
+    <ul>
+        <li>Linear Regression</li>
+        <li>Decision Tree Regression</li>
+        <li>Random Forest Regression</li>
+    </ul>
+
+    <p style="margin-top:15px;">
+        <strong>Note:</strong> The current historical dataset
+        contains generated sample records. Forecasts are estimates
+        based on this sample dataset.
+    </p>
+
+</div>
+
+{% endblock %}

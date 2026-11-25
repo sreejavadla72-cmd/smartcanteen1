@@ -1,0 +1,66 @@
+
+{% extends "base.html" %}
+
+{% block title %}Sales | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Sales Management 💰</h1>
+
+<p class="page-description">
+    Record food sales and automatically update available stock.
+</p>
+
+<div class="form-card">
+
+    <h2>Record New Sale</h2>
+
+    {% if items %}
+
+    <form method="POST" action="{{ url_for('sales') }}">
+
+        <label>Select Food Item</label>
+
+        <select name="food_id" required>
+            <option value="">Choose Food Item</option>
+
+            {% for item in items %}
+            <option value="{{ item.id }}">
+                {{ item.food_name }}
+                - ₹{{ "%.2f"|format(item.price) }}
+                (Stock: {{ item.quantity_available }})
+            </option>
+            {% endfor %}
+
+        </select>
+
+        <label>Quantity Sold</label>
+
+        <input
+            type="number"
+            name="quantity"
+            min="1"
+            step="1"
+            placeholder="Enter quantity sold"
+            required
+        >
+
+        <button type="submit" class="primary-btn">
+            Record Sale
+        </button>
+
+    </form>
+
+    {% else %}
+
+    <p>No food items are available in stock.</p>
+
+    <a href="{{ url_for('add_food') }}" class="primary-btn">
+        Add Food Items
+    </a>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}

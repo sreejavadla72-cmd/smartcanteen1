@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Smart Canteen{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+{% if session.get('admin_id') %}
+<header class="topbar">
+    <div class="brand">🍽️ Smart Canteen</div>
+    <a href="{{ url_for('logout') }}" class="logout-btn">Logout</a>
+</header>
+
+<div class="layout">
+    <aside class="sidebar">
+        <h3>MAIN MENU</h3>
+        <a href="{{ url_for('index') }}">🏠 Home</a>
+        <a href="{{ url_for('food') }}">🍔 View Food Items</a>
+        <a href="{{ url_for('add_food') }}">➕ Add Food Items</a>
+        <a href="{{ url_for('sales') }}">💰 Sales</a>
+        <a href="{{ url_for('sales_details') }}">📋 Sales Details</a>
+        <a href="{{ url_for('sales_history') }}">📚 Sales History</a>
+        <a href="{{ url_for('daily_sales') }}">📅 Daily Sales</a>
+        <a href="{{ url_for('weekly_sales') }}">📊 Weekly Sales</a>
+        <a href="{{ url_for('monthly_sales') }}">📈 Monthly Sales</a>
+        <a href="{{ url_for('dashboard') }}">📉 Dashboard</a>
+        <a href="{{ url_for('predictions') }}">🤖 Predictions</a>
+    </aside>
+
+    <main class="main-content">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% for category, message in messages %}
+                <div class="alert {{ category }}">{{ message }}</div>
+            {% endfor %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+</div>
+
+{% else %}
+<main class="login-wrapper">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% for category, message in messages %}
+            <div class="alert {{ category }}">{{ message }}</div>
+        {% endfor %}
+    {% endwith %}
+
+    {% block login_content %}{% endblock %}
+</main>
+{% endif %}
+
+</body>
+</html>

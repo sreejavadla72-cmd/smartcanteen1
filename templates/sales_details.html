@@ -1,0 +1,55 @@
+
+{% extends "base.html" %}
+
+{% block title %}Sales Details | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Sales Details 📋</h1>
+
+<p class="page-description">
+    View individual food items sold and their amounts.
+</p>
+
+<div style="overflow-x:auto;">
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Sale ID</th>
+            <th>Date and Time</th>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Subtotal</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for item in details %}
+        <tr>
+            <td>{{ item.sale_id }}</td>
+            <td>{{ item.sale_date }}</td>
+            <td>{{ item.food_name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>₹{{ "%.2f"|format(item.unit_price) }}</td>
+            <td>₹{{ "%.2f"|format(item.subtotal) }}</td>
+        </tr>
+
+        {% else %}
+        <tr>
+            <td colspan="6" style="text-align:center;">
+                No sales details available.
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+</div>
+
+{% endblock %}

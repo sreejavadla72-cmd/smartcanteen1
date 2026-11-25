@@ -1,0 +1,241 @@
+Prediction_Date,Day,Month,Month_Number,Year,Weekday_Number,Is_Weekend,Is_Holiday,Festival,Food_Item,Predicted_Quantity
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Dosa,61
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Egg Puff,53
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Idli,72
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Lemon Juice,45
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Samosa,64
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Tea,90
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Veg Meals,48
+2026-11-01,Sunday,November,11,2026,6,1,0,None,Veg Sandwich,43
+2026-11-02,Monday,November,11,2026,0,0,0,None,Dosa,56
+2026-11-02,Monday,November,11,2026,0,0,0,None,Egg Puff,48
+2026-11-02,Monday,November,11,2026,0,0,0,None,Idli,67
+2026-11-02,Monday,November,11,2026,0,0,0,None,Lemon Juice,40
+2026-11-02,Monday,November,11,2026,0,0,0,None,Samosa,59
+2026-11-02,Monday,November,11,2026,0,0,0,None,Tea,85
+2026-11-02,Monday,November,11,2026,0,0,0,None,Veg Meals,43
+2026-11-02,Monday,November,11,2026,0,0,0,None,Veg Sandwich,38
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Dosa,56
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Egg Puff,48
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Idli,67
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Lemon Juice,40
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Samosa,58
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Tea,85
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Veg Meals,43
+2026-11-03,Tuesday,November,11,2026,1,0,0,None,Veg Sandwich,38
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Dosa,56
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Egg Puff,48
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Idli,67
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Lemon Juice,40
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Samosa,59
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Tea,85
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Veg Meals,43
+2026-11-04,Wednesday,November,11,2026,2,0,0,None,Veg Sandwich,38
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Dosa,56
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Egg Puff,47
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Idli,67
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Lemon Juice,39
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Samosa,58
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Tea,84
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Veg Meals,42
+2026-11-05,Thursday,November,11,2026,3,0,0,None,Veg Sandwich,37
+2026-11-06,Friday,November,11,2026,4,0,0,None,Dosa,56
+2026-11-06,Friday,November,11,2026,4,0,0,None,Egg Puff,48
+2026-11-06,Friday,November,11,2026,4,0,0,None,Idli,67
+2026-11-06,Friday,November,11,2026,4,0,0,None,Lemon Juice,40
+2026-11-06,Friday,November,11,2026,4,0,0,None,Samosa,59
+2026-11-06,Friday,November,11,2026,4,0,0,None,Tea,85
+2026-11-06,Friday,November,11,2026,4,0,0,None,Veg Meals,43
+2026-11-06,Friday,November,11,2026,4,0,0,None,Veg Sandwich,38
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Dosa,61
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Egg Puff,53
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Idli,72
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Lemon Juice,45
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Samosa,64
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Tea,90
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Veg Meals,48
+2026-11-07,Saturday,November,11,2026,5,1,0,None,Veg Sandwich,43
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Dosa,61
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Egg Puff,53
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Idli,72
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Lemon Juice,45
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Samosa,64
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Tea,90
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Veg Meals,48
+2026-11-08,Sunday,November,11,2026,6,1,0,None,Veg Sandwich,43
+2026-11-09,Monday,November,11,2026,0,0,0,None,Dosa,56
+2026-11-09,Monday,November,11,2026,0,0,0,None,Egg Puff,48
+2026-11-09,Monday,November,11,2026,0,0,0,None,Idli,67
+2026-11-09,Monday,November,11,2026,0,0,0,None,Lemon Juice,40
+2026-11-09,Monday,November,11,2026,0,0,0,None,Samosa,59
+2026-11-09,Monday,November,11,2026,0,0,0,None,Tea,85
+2026-11-09,Monday,November,11,2026,0,0,0,None,Veg Meals,43
+2026-11-09,Monday,November,11,2026,0,0,0,None,Veg Sandwich,38
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Dosa,56
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Egg Puff,48
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Idli,67
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Lemon Juice,40
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Samosa,58
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Tea,85
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Veg Meals,43
+2026-11-10,Tuesday,November,11,2026,1,0,0,None,Veg Sandwich,38
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Dosa,56
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Egg Puff,48
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Idli,67
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Lemon Juice,40
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Samosa,59
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Tea,85
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Veg Meals,43
+2026-11-11,Wednesday,November,11,2026,2,0,0,None,Veg Sandwich,38
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Dosa,56
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Egg Puff,47
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Idli,67
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Lemon Juice,39
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Samosa,58
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Tea,84
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Veg Meals,42
+2026-11-12,Thursday,November,11,2026,3,0,0,None,Veg Sandwich,37
+2026-11-13,Friday,November,11,2026,4,0,0,None,Dosa,56
+2026-11-13,Friday,November,11,2026,4,0,0,None,Egg Puff,48
+2026-11-13,Friday,November,11,2026,4,0,0,None,Idli,67
+2026-11-13,Friday,November,11,2026,4,0,0,None,Lemon Juice,40
+2026-11-13,Friday,November,11,2026,4,0,0,None,Samosa,59
+2026-11-13,Friday,November,11,2026,4,0,0,None,Tea,85
+2026-11-13,Friday,November,11,2026,4,0,0,None,Veg Meals,43
+2026-11-13,Friday,November,11,2026,4,0,0,None,Veg Sandwich,38
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Dosa,61
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Egg Puff,53
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Idli,72
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Lemon Juice,45
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Samosa,64
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Tea,90
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Veg Meals,48
+2026-11-14,Saturday,November,11,2026,5,1,0,None,Veg Sandwich,43
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Dosa,61
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Egg Puff,53
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Idli,72
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Lemon Juice,45
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Samosa,64
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Tea,90
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Veg Meals,48
+2026-11-15,Sunday,November,11,2026,6,1,0,None,Veg Sandwich,43
+2026-11-16,Monday,November,11,2026,0,0,0,None,Dosa,56
+2026-11-16,Monday,November,11,2026,0,0,0,None,Egg Puff,48
+2026-11-16,Monday,November,11,2026,0,0,0,None,Idli,67
+2026-11-16,Monday,November,11,2026,0,0,0,None,Lemon Juice,40
+2026-11-16,Monday,November,11,2026,0,0,0,None,Samosa,59
+2026-11-16,Monday,November,11,2026,0,0,0,None,Tea,85
+2026-11-16,Monday,November,11,2026,0,0,0,None,Veg Meals,43
+2026-11-16,Monday,November,11,2026,0,0,0,None,Veg Sandwich,38
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Dosa,56
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Egg Puff,48
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Idli,67
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Lemon Juice,40
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Samosa,58
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Tea,85
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Veg Meals,43
+2026-11-17,Tuesday,November,11,2026,1,0,0,None,Veg Sandwich,38
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Dosa,56
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Egg Puff,48
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Idli,67
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Lemon Juice,40
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Samosa,59
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Tea,85
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Veg Meals,43
+2026-11-18,Wednesday,November,11,2026,2,0,0,None,Veg Sandwich,38
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Dosa,56
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Egg Puff,47
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Idli,67
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Lemon Juice,39
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Samosa,58
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Tea,84
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Veg Meals,42
+2026-11-19,Thursday,November,11,2026,3,0,0,None,Veg Sandwich,37
+2026-11-20,Friday,November,11,2026,4,0,0,None,Dosa,56
+2026-11-20,Friday,November,11,2026,4,0,0,None,Egg Puff,48
+2026-11-20,Friday,November,11,2026,4,0,0,None,Idli,67
+2026-11-20,Friday,November,11,2026,4,0,0,None,Lemon Juice,40
+2026-11-20,Friday,November,11,2026,4,0,0,None,Samosa,59
+2026-11-20,Friday,November,11,2026,4,0,0,None,Tea,85
+2026-11-20,Friday,November,11,2026,4,0,0,None,Veg Meals,43
+2026-11-20,Friday,November,11,2026,4,0,0,None,Veg Sandwich,38
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Dosa,61
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Egg Puff,53
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Idli,72
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Lemon Juice,45
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Samosa,64
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Tea,90
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Veg Meals,48
+2026-11-21,Saturday,November,11,2026,5,1,0,None,Veg Sandwich,43
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Dosa,61
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Egg Puff,53
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Idli,72
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Lemon Juice,45
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Samosa,64
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Tea,90
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Veg Meals,48
+2026-11-22,Sunday,November,11,2026,6,1,0,None,Veg Sandwich,43
+2026-11-23,Monday,November,11,2026,0,0,0,None,Dosa,56
+2026-11-23,Monday,November,11,2026,0,0,0,None,Egg Puff,48
+2026-11-23,Monday,November,11,2026,0,0,0,None,Idli,67
+2026-11-23,Monday,November,11,2026,0,0,0,None,Lemon Juice,40
+2026-11-23,Monday,November,11,2026,0,0,0,None,Samosa,59
+2026-11-23,Monday,November,11,2026,0,0,0,None,Tea,85
+2026-11-23,Monday,November,11,2026,0,0,0,None,Veg Meals,43
+2026-11-23,Monday,November,11,2026,0,0,0,None,Veg Sandwich,38
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Dosa,56
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Egg Puff,48
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Idli,67
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Lemon Juice,40
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Samosa,58
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Tea,85
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Veg Meals,43
+2026-11-24,Tuesday,November,11,2026,1,0,0,None,Veg Sandwich,38
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Dosa,56
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Egg Puff,48
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Idli,67
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Lemon Juice,40
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Samosa,59
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Tea,85
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Veg Meals,43
+2026-11-25,Wednesday,November,11,2026,2,0,0,None,Veg Sandwich,38
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Dosa,56
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Egg Puff,47
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Idli,67
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Lemon Juice,39
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Samosa,58
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Tea,84
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Veg Meals,42
+2026-11-26,Thursday,November,11,2026,3,0,0,None,Veg Sandwich,37
+2026-11-27,Friday,November,11,2026,4,0,0,None,Dosa,56
+2026-11-27,Friday,November,11,2026,4,0,0,None,Egg Puff,48
+2026-11-27,Friday,November,11,2026,4,0,0,None,Idli,67
+2026-11-27,Friday,November,11,2026,4,0,0,None,Lemon Juice,40
+2026-11-27,Friday,November,11,2026,4,0,0,None,Samosa,59
+2026-11-27,Friday,November,11,2026,4,0,0,None,Tea,85
+2026-11-27,Friday,November,11,2026,4,0,0,None,Veg Meals,43
+2026-11-27,Friday,November,11,2026,4,0,0,None,Veg Sandwich,38
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Dosa,61
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Egg Puff,53
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Idli,72
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Lemon Juice,45
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Samosa,64
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Tea,90
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Veg Meals,48
+2026-11-28,Saturday,November,11,2026,5,1,0,None,Veg Sandwich,43
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Dosa,61
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Egg Puff,53
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Idli,72
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Lemon Juice,45
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Samosa,64
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Tea,90
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Veg Meals,48
+2026-11-29,Sunday,November,11,2026,6,1,0,None,Veg Sandwich,43
+2026-11-30,Monday,November,11,2026,0,0,0,None,Dosa,56
+2026-11-30,Monday,November,11,2026,0,0,0,None,Egg Puff,48
+2026-11-30,Monday,November,11,2026,0,0,0,None,Idli,67
+2026-11-30,Monday,November,11,2026,0,0,0,None,Lemon Juice,40
+2026-11-30,Monday,November,11,2026,0,0,0,None,Samosa,59
+2026-11-30,Monday,November,11,2026,0,0,0,None,Tea,85
+2026-11-30,Monday,November,11,2026,0,0,0,None,Veg Meals,43
+2026-11-30,Monday,November,11,2026,0,0,0,None,Veg Sandwich,38

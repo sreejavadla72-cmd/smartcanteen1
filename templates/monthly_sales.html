@@ -1,0 +1,44 @@
+
+{% extends "base.html" %}
+
+{% block title %}Monthly Sales | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Monthly Sales History 📈</h1>
+
+<p class="page-description">
+    Analyze the canteen's monthly sales performance.
+</p>
+
+<div style="overflow-x:auto;">
+<table>
+    <thead>
+        <tr>
+            <th>Year</th>
+            <th>Month</th>
+            <th>Total Orders</th>
+            <th>Total Sales</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.sales_year }}</td>
+            <td>{{ record.month_name }}</td>
+            <td>{{ record.total_orders }}</td>
+            <td>₹{{ "%.2f"|format(record.total_sales) }}</td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="4" style="text-align:center;">
+                No monthly sales records found.
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+
+{% endblock %}

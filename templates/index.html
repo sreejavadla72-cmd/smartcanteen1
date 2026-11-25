@@ -1,0 +1,76 @@
+
+{% extends "base.html" %}
+
+{% block title %}Home | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to Smart Canteen! 👋</h1>
+
+<p class="page-description">
+    Smart Canteen Management and Food Demand Forecasting System.
+    Manage food items, sales records and future food demand predictions.
+</p>
+
+<div class="card-container">
+
+    <div class="stat-card">
+        <h3>🍔 Total Food Items</h3>
+        <h2>{{ food_count }}</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>💰 Total Sales Records</h3>
+        <h2>{{ sales_count }}</h2>
+    </div>
+
+    <div class="stat-card">
+        <h3>📅 Today's Sales</h3>
+        <h2>₹{{ "%.2f"|format(today_sales) }}</h2>
+    </div>
+
+</div>
+
+<h2 style="margin-top:35px;">Management Modules</h2>
+
+<div class="card-container">
+
+    <div class="stat-card">
+        <h3>🍔 Food Management</h3>
+        <p>View and manage available food items.</p>
+        <a href="{{ url_for('food') }}" class="primary-btn">View Items</a>
+    </div>
+
+    <div class="stat-card">
+        <h3>➕ Add Food</h3>
+        <p>Add new food items to the canteen.</p>
+        <a href="{{ url_for('add_food') }}" class="primary-btn">Add Items</a>
+    </div>
+
+    <div class="stat-card">
+        <h3>💰 Sales Management</h3>
+        <p>Record daily food sales.</p>
+        <a href="{{ url_for('sales') }}" class="primary-btn">Manage Sales</a>
+    </div>
+
+    <div class="stat-card">
+        <h3>📊 Sales History</h3>
+        <p>Check daily, weekly and monthly sales.</p>
+        <a href="{{ url_for('sales_history') }}" class="primary-btn">View History</a>
+    </div>
+
+    <div class="stat-card">
+        <h3>📈 Admin Dashboard</h3>
+        <p>View canteen business statistics.</p>
+        <a href="{{ url_for('dashboard') }}" class="primary-btn">Open Dashboard</a>
+    </div>
+
+    <div class="stat-card">
+        <h3>🤖 Food Predictions</h3>
+        <p>Forecast future food demand using machine learning.</p>
+        <a href="{{ url_for('predictions') }}" class="primary-btn">View Predictions</a>
+    </div>
+
+</div>
+
+{% endblock %}

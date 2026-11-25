@@ -1,0 +1,266 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f3f6fb;
+    color: #26344a;
+}
+
+.topbar {
+    height: 70px;
+    background: #142b4a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.brand {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.logout-btn {
+    background: #ef6464;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.layout {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+.sidebar {
+    width: 250px;
+    background: #1c385c;
+    padding: 25px 15px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    color: #a9bdd6;
+    font-size: 12px;
+    margin: 5px 12px 18px;
+    letter-spacing: 1.5px;
+}
+
+.sidebar a {
+    display: block;
+    color: #e5edf7;
+    text-decoration: none;
+    padding: 13px 14px;
+    margin-bottom: 7px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #34577f;
+    padding-left: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+h1 {
+    margin-bottom: 12px;
+}
+
+h2 {
+    margin-bottom: 18px;
+}
+
+.page-description {
+    color: #718096;
+    margin-bottom: 25px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30,50,80,0.07);
+    border-left: 5px solid #3285c7;
+}
+
+.stat-card h3 {
+    color: #758399;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.stat-card h2 {
+    font-size: 27px;
+    color: #1d3555;
+}
+
+.form-card {
+    background: white;
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30,50,80,0.07);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin: 15px 0 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8e0eb;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3285c7;
+}
+
+.primary-btn {
+    display: inline-block;
+    background: #287fc1;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.primary-btn:hover {
+    background: #1d6095;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(30,50,80,0.06);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e9edf3;
+}
+
+th {
+    background: #1d4169;
+    color: white;
+}
+
+.alert {
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.alert.success {
+    background: #d8f5e3;
+    color: #176a3a;
+}
+
+.alert.danger {
+    background: #ffe0e0;
+    color: #a52b2b;
+}
+
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #142b4a, #287fc1);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.login-icon {
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.login-card h1 {
+    color: #1d4169;
+    font-size: 28px;
+}
+
+.login-card > p {
+    color: #758399;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.login-card h2 {
+    color: #26344a;
+    margin-bottom: 15px;
+}
+
+.login-card form {
+    text-align: left;
+}
+
+.login-card .primary-btn {
+    width: 100%;
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .topbar {
+        padding: 0 15px;
+    }
+}

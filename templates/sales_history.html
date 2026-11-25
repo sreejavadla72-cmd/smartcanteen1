@@ -1,0 +1,58 @@
+
+{% extends "base.html" %}
+
+{% block title %}Sales History | Smart Canteen{% endblock %}
+
+{% block content %}
+
+<h1>Sales History 📚</h1>
+
+<p class="page-description">
+    Complete history of all recorded canteen sales.
+</p>
+
+<div class="card-container">
+
+    <div class="stat-card">
+        <h3>Total Sales Records</h3>
+        <h2>{{ records|length }}</h2>
+    </div>
+
+</div>
+
+<div style="margin-top:25px; overflow-x:auto;">
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Sale ID</th>
+            <th>Sale Date</th>
+            <th>Total Amount</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        {% for record in records %}
+        <tr>
+            <td>{{ record.id }}</td>
+            <td>{{ record.sale_date }}</td>
+            <td>₹{{ "%.2f"|format(record.total_amount) }}</td>
+        </tr>
+
+        {% else %}
+        <tr>
+            <td colspan="3" style="text-align:center;">
+                No sales history available.
+            </td>
+        </tr>
+        {% endfor %}
+
+    </tbody>
+
+</table>
+
+</div>
+
+{% endblock %}
